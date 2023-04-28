@@ -1,0 +1,64 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <!-- Here are some components inside the horizontal LinearLayout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/searchInput"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_style"
+            android:inputType="textPersonName"
+            android:layout_marginRight="10dp"
+            />
+        <Button
+            android:id="@+id/searchBtn"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_style"
+            android:text="搜索" />
+        <ImageView
+            android:id="@+id/addBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="17dp"
+            android:background="@drawable/btn_style"
+            app:srcCompat="@drawable/addicon" />
+
+        <ImageView
+            android:id="@+id/backHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:scaleY="0.9"
+            android:scaleX="0.9"
+            android:layout_marginLeft="17dp"
+            android:background="@drawable/btn_style"
+            app:srcCompat="@drawable/homeicon" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp" />
+
+
+
+
+</LinearLayout>
